@@ -21,10 +21,13 @@
 					<li class="page_menu_item has-children menu_mm">
 						<a href="categories.php">Categories<i class="fa fa-angle-down"></i></a>
 						<ul class="page_menu_selection menu_mm">
+						<?php foreach ($categories as $row){?>
+							<li><a class="page_menu_item menu_mm" href="<?php echo base_url('categories/'.$row['categories_id'])?>"><?php echo $row['categories_name'] ?><i class="fa fa-angle-down"></i></a></li>
+						<?php }?>
+							<!-- <li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
 							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>  -->
 						</ul>
 					</li>
 					<li class="page_menu_item menu_mm"><a href="index.php">Accessories<i class="fa fa-angle-down"></i></a></li>
