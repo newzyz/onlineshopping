@@ -15,7 +15,7 @@
 									<li class="hassubs active">
 										<a href="index.php">Home</a>
 										<ul>
-											<li><a href="categories.php">Categories</a></li>
+											<li><a href="<?php echo base_url('categories/1')?>">Categories</a></li>
 											<li><a href="product.php">Product</a></li>
 											<li><a href="cart.php">Cart</a></li>
 											<li><a href="checkout.php">Check out</a></li>
@@ -23,7 +23,7 @@
 										</ul>
 									</li>
 									<li class="hassubs">
-										<a href="categories.php">Categories</a>
+										<a href="<?php echo base_url('categories/1')?>">Categories</a>
 										<ul>
                                         <?php foreach ($categories as $row){?>
 											<li><a href="<?php echo base_url('categories/'.$row['categories_id'])?>"><?php echo $row['categories_name'] ?></a></li>
